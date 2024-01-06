@@ -25,15 +25,24 @@ app.get("/.well-known/assetlinks.json", (req, res) => {
     },
   ]);
 });
+
 app.get("/.well-known/apple-app-site-association", (req, res) => {
-  res
-    .status(200)
-    .set("Content-Type", "application/json")
-    .send(
-      JSON.parse(
-        fs.readFileSync("./.well-known/apple-app-site-association.json")
-      )
-    );
+  res.setHeader("Content-Type", "application/json");
+  res.status(200).json({
+    applinks: {
+      details: [
+        {
+          appIDs: ["9NPC6A3L6R.com.map.motorcyclistmap.com"],
+          components: [
+            {
+              "/": "*",
+              comment: "Matches any URL.",
+            },
+          ],
+        },
+      ],
+    },
+  });
 });
 
 app.listen(port, () => {
