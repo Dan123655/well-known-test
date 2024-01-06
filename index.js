@@ -31,7 +31,7 @@ app.get("/.well-known/apple-app-site-association", (req, res) => {
     .set("Content-Type", "application/json")
     .send(
       JSON.parse(
-        fs.readFileSync("./.well-known/apple-app-site-association.json", "utf8")
+        fs.readFileSync("./.well-known/apple-app-site-association.json")
       )
     );
 });
