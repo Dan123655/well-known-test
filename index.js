@@ -6,6 +6,9 @@ const fs = require("fs");
 //   key: fs.readFileSync("./security/cert.key"),
 //   cert: fs.readFileSync("./security/cert.pem"),
 // };
+app.get("/", (req, res) => {
+  res.send("i werk");
+});
 app.get("/.well-known/assetlinks.json", (req, res) => {
   console.log("assetlinks.json");
   res.json([
