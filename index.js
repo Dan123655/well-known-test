@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const fs = require("fs");
+const path = require("path");
 // const httpsOptions = {
 //   key: fs.readFileSync("./security/cert.key"),
 //   cert: fs.readFileSync("./security/cert.pem"),
@@ -27,22 +28,16 @@ app.get("/.well-known/assetlinks.json", (req, res) => {
 });
 
 app.get("/.well-known/apple-app-site-association", (req, res) => {
+  // Set content type to application/json
   res.setHeader("Content-Type", "application/json");
-  res.status(200).json({
-    applinks: {
-      details: [
-        {
-          appIDs: ["9NPC6A3L6R.com.map.motorcyclistmap.com"],
-          components: [
-            {
-              "/": "*",
-              comment: "Matches any URL.",
-            },
-          ],
-        },
-      ],
-    },
-  });
+
+  // Read the file and send it as the response
+  const aasaFilePath = path.join(
+    __dirname,
+    "./.well-known/apple-app-site-association"
+  );
+  const aasaFileContent = fs.readFileSync(aasaFilePath, "utf8");
+  res.status(200).send(aasaFileContent);
 });
 
 app.listen(port, () => {
