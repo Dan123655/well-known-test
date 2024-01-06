@@ -27,7 +27,8 @@ app.get("/.well-known/assetlinks.json", (req, res) => {
 });
 
 app.get("/.well-known/apple-app-site-association", (req, res) => {
-  res.json({
+  res.setHeader("Content-Type", "application/json");
+  res.status(200).json({
     applinks: {
       details: [
         {
