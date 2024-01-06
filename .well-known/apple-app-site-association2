@@ -2,7 +2,9 @@
   "applinks": {
     "details": [
       {
-        "appIDs": ["9NPC6A3L6R.com.map.motorcyclistmap.com"],
+        "appIDs": [
+          "7N2TAW3R69.com.mapotic.adresarfarmaru"
+        ],
         "components": [
           {
             "/": "*",
