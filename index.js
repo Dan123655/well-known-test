@@ -38,6 +38,7 @@ app.get("/1621180-gas-stop-at-vaughn-nm", (req, res) => {
     <meta property="al:ios:app_name" content="Motorcyclist Map" />
     <meta property="al:ios:app_store_id" content="1618783783" />
     <meta property="al:ios:url" content="motorcyclistmap://1621180-gas-stop-at-vaughn-nm" />
+    <meta property="al:web:should_fallback" content="false">
     <meta property="og:title" content="1621180-gas-stop-at-vaughn-nm" />
     <meta property="og:url" content="https://motorcyclistmap.com/1621180-gas-stop-at-vaughn-nm" />
     <meta property="og:type" content="website" />
