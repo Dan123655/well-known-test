@@ -27,6 +27,34 @@ app.get("/", (req, res) => {
   </html>
 `);
 });
+app.get("/1621180-gas-stop-at-vaughn-nm", (req, res) => {
+  res.send(`
+  <html>
+  <head>
+    <title>WNT</title>
+    <meta property="al:android:app_name" content="Motorcyclist Map" />
+    <meta property="al:android:package" content="com.map.motorcyclistmap.com" />
+    <meta property="al:android:url" content="motorcyclistmap://1621180-gas-stop-at-vaughn-nm" />
+    <meta property="al:ios:app_name" content="Motorcyclist Map" />
+    <meta property="al:ios:app_store_id" content="1618783783" />
+    <meta property="al:ios:url" content="motorcyclistmap://1621180-gas-stop-at-vaughn-nm" />
+    <meta property="og:title" content="1621180-gas-stop-at-vaughn-nm" />
+    <meta property="og:url" content="https://motorcyclistmap.com/1621180-gas-stop-at-vaughn-nm" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://scontent.fprg4-1.fna.fbcdn.net/v/t39.30808-6/356064505_238107928975203_836527478567241382_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=TKWXCToAxqkAX91R71S&_nc_ht=scontent.fprg4-1.fna&oh=00_AfC1xNfcPOP9XSxNKFORYpLu75T-Q6miV8lJCpPuF6zy9g&oe=659FBA15" />
+    <meta property="og:site_name" content="Motorcyclist Map" />
+    <meta property="og:description" content="Find out the best place to do moto things and stuff wroom wroom" />
+  </head>
+  <body>
+    <h1>I serve well-knows files and applinks in head/</h1>
+    <br />
+    try opening in app:
+    <a href="motorcyclistmap://1621180-gas-stop-at-vaughn-nm">open place 1621180 in app for free</a>
+
+  </body>
+  </html>
+`);
+});
 // app.get("/.well-known/assetlinks.json", (req, res) => {
 //   console.log("assetlinks.json");
 //   res.json([
