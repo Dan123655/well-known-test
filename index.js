@@ -12,12 +12,12 @@ app.get("/", (req, res) => {
   <html>
   <head>
     <title>WNT</title>
-    <meta name="al:android:app_name" content="Motorcyclist Map" />
-    <meta name="al:android:package" content="com.map.motorcyclistmap.com" />
-    <meta name="al:android:url" content="motorcyclistmap://" />
-    <meta name="al:ios:app_name" content="Motorcyclist Map" />
-    <meta name="al:ios:app_store_id" content="1618783783" />
-    <meta name="al:ios:url" content="motorcyclistmap://" />
+    <meta property="al:android:app_name" content="Motorcyclist Map" />
+    <meta property="al:android:package" content="com.map.motorcyclistmap.com" />
+    <meta property="al:android:url" content="motorcyclistmap://" />
+    <meta property="al:ios:app_name" content="Motorcyclist Map" />
+    <meta property="al:ios:app_store_id" content="1618783783" />
+    <meta property="al:ios:url" content="motorcyclistmap://" />
     <meta property="al:web:should_fallback" content="false">
     <!-- Additional OG tags as needed -->
   </head>
