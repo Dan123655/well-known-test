@@ -8,7 +8,23 @@ const path = require("path");
 //   cert: fs.readFileSync("./security/cert.pem"),
 // };
 app.get("/", (req, res) => {
-  res.send("i werk");
+  res.send(`
+  <html>
+  <head>
+    <title>WNT</title>
+    <meta name="al:android:app_name" content="Motorcyclist Map" />
+    <meta name="al:android:package" content="com.map.motorcyclistmap.com" />
+    <meta name="al:android:url" content="motorcyclistmap://" />
+    <meta name="al:ios:app_name" content="Motorcyclist Map" />
+    <meta name="al:ios:app_store_id" content="1618783783" />
+    <meta name="al:ios:url" content="motorcyclistmap://" />
+    <!-- Additional OG tags as needed -->
+  </head>
+  <body>
+    <h1>I serve well-knows files and applinks in head/</h1>
+  </body>
+  </html>
+`);
 });
 // app.get("/.well-known/assetlinks.json", (req, res) => {
 //   console.log("assetlinks.json");
