@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
     <meta name="al:ios:app_name" content="Motorcyclist Map" />
     <meta name="al:ios:app_store_id" content="1618783783" />
     <meta name="al:ios:url" content="motorcyclistmap://" />
+    <meta property="al:web:should_fallback" content="false">
     <!-- Additional OG tags as needed -->
   </head>
   <body>
