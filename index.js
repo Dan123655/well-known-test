@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     <title>WNT</title>
     <meta property="al:android:app_name" content="Motorcyclist Map" />
     <meta property="al:android:package" content="com.map.motorcyclistmap.com" />
-    <meta property="al:android:url" content="motorcyclistmap://" />
+    <meta property="al:android:url" content="motorcyclistmap://1621180-gas-stop-at-vaughn-nm" />
     <meta property="al:ios:app_name" content="Motorcyclist Map" />
     <meta property="al:ios:app_store_id" content="1618783783" />
     <meta property="al:ios:url" content="motorcyclistmap://" />
